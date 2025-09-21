@@ -1,0 +1,7 @@
+CREATE TABLE Products (
+    ProductID INT AUTO_INCREMENT PRIMARY KEY,
+    ProductName VARCHAR(100) NOT NULL,
+    Category VARCHAR(100) NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    InStock VARCHAR(10) NOT NULL
+);
