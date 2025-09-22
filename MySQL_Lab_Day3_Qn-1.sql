@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS Products;
 CREATE TABLE Products (
     ProductID INT AUTO_INCREMENT PRIMARY KEY,
     ProductName VARCHAR(100) NOT NULL,
@@ -11,6 +12,7 @@ VALUES
     ('Smartphone', 'Electronics', 600, 'No'),
     ('Desk Chair', 'Furniture', 150, 'Yes'),
     ('Dining Table', 'Furniture', 300, 'Yes'),
+    ('Headphones', 'Electronics', 200, 'No'),
     ('Headphones', 'Electronics', 200, 'No'),
     ('Bookshelf', 'Furniture', 120, 'Yes'),
     ('Monitor', 'Electronics', 250, 'Yes'),
