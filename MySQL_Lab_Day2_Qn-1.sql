@@ -7,7 +7,6 @@ CREATE TABLE student (
     Grade INT NOT NULL
 );
 
--- Inserting 4 data into the student table
 INSERT INTO student (StudentName, Age, Department, Grade)
 VALUES
     ('Alfred', 23, 'Electronics', 80),
@@ -15,19 +14,13 @@ VALUES
     ('Charles', 24, 'Mechanical', 85),
     ('Diana', 21, 'Civil', 88);
 
-
--- Query to select students older than 20
 SELECT * FROM student
 WHERE Age > 20;
 
--- Query to select students in Computer Science or Physics department
 SELECT * FROM student
 WHERE Department = 'Computer Science' OR Department = 'Physics';
 
--- Query to select students with Grade equal to 90
-SELECT * FROM student
 WHERE Grade = 90;
 
--- Query to select students with Grade between 70 and 90
 SELECT * FROM student
 WHERE Grade BETWEEN 70 AND 90; 
