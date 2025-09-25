@@ -29,3 +29,17 @@ VALUES
 
 SELECT * FROM books1;
 SELECT * FROM bestsellers;
+
+SELECT Title, Author FROM books1
+UNION
+SELECT Title, Author FROM bestsellers;
+
+SELECT * FROM books1
+WHERE Price > 400;
+
+SELECT AVG(Price) AS Average_Price FROM books1;
+
+SELECT COUNT(*) AS Number_of_Books FROM books1;
+
+SELECT Title AS `Book Title`, Author AS `Written By`
+FROM books1;
