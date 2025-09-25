@@ -5,7 +5,7 @@ CREATE TABLE movies(
     Release_Date INT(4) NOT NULL,
     Rating DECIMAL(3,1) NOT NULL,
     Box_Office INT NOT NULL
-)
+);
 INSERT INTO movies(Title, Genre, Release_Date, Rating, Box_Office);
 VALUES
 ('Inception', 'Sci-Fi', 2010, 8.8, 825),
@@ -13,3 +13,8 @@ VALUES
 ('Interstellar', 'Sci-Fi', 2014, 8.6, 677),
 ('Joker', 'Drama', 2019, 8.4, 1074),
 ('Dunkirk', 'War', 2017, 7.9, 527);
+
+SELECT Title, Box_Office AS `Earnings(in Cr)` From movies;
+
+SELECT Title AS `Movie Title`, Genre AS `Category`
+FROM movies;
