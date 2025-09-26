@@ -17,4 +17,5 @@ VALUES
 (5, 'Divya', 'Python', 95, 'divya@mail.com', '9876543214', 'Mumbai', 4),
 (6, 'Manoj', 'JavaScript', 72, 'manoj@mail.com', '9876543215', 'Delhi', NULL);
 
-SELECT 
+SELECT Course, COUNT(*) AS total_students FROM students1
+GROUP BY Course;
