@@ -17,3 +17,5 @@ VALUES
 (6, 'Kiran', 'Pune', 70, NULL, 'Yoga'),
 (7, 'Latha', 'Pune', 87, NULL, 'Fitness');
 
+SELECT * FROM MobileApp
+WHERE Score > (SELECT AVG(Score) FROM MobileApp);
