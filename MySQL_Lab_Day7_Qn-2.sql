@@ -19,3 +19,7 @@ VALUES
 
 SELECT * FROM MobileApp
 WHERE Score > (SELECT AVG(Score) FROM MobileApp);
+
+SELECT UserName FROM MobileApp
+WHERE Challenge = (SELECT Challenge FROM MobileApp WHERE UserName = 'Farah');
+
