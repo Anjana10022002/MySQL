@@ -23,3 +23,7 @@ GROUP BY Course;
 SELECT Course, AVG(Score) AS Avg_Score FROM students1
 GROUP BY Course
 HAVING AVG(Score) > 80;
+
+SELECT StudentName, Course FROM students1
+WHERE City IN ('Chennai', 'Mumbai');
+
