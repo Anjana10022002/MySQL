@@ -27,3 +27,14 @@ HAVING AVG(Score) > 80;
 SELECT StudentName, Course FROM students1
 WHERE City IN ('Chennai', 'Mumbai');
 
+SELECT StudentName FROM students1
+WHERE Bonus_Points IS NULL; 
+
+SELECT StudentName AS student_name
+FROM students1
+WHERE City = 'Chennai'
+UNION
+SELECT StudentName AS student_name
+FROM students1
+WHERE City = 'Mumbai';
+
