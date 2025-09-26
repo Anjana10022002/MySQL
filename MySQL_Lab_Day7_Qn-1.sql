@@ -19,3 +19,7 @@ VALUES
 
 SELECT Course, COUNT(*) AS total_students FROM students1
 GROUP BY Course;
+
+SELECT Course, AVG(Score) AS Avg_Score FROM students1
+GROUP BY Course
+HAVING AVG(Score) > 80;
