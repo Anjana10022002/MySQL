@@ -5,5 +5,11 @@ CREATE TABLE authors(
     AuthorName VARCHAR(100) NOT NULL,   
     Country VARCHAR(100) NOT NULL,
 );
+CREATE TABLE books(
+    BookID INT AUTO_INCREMENT PRIMARY KEY,
+    Title VARCHAR(200) NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    AuthorID INT NOT NULL
+); 
 
  
