@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS GroceryShop;
+CREATE DATABASE GroceryShop;
+USE GroceryShop
