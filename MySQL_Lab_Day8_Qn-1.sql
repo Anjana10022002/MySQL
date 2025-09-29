@@ -1,3 +1,8 @@
 DROP DATABASE IF EXISTS GroceryShop;
 CREATE DATABASE GroceryShop;
-USE GroceryShop
+USE GroceryShop;
+CREATE TABLE products(
+    ProductId INT AUTO_INCREMENT PRIMARY KEY,
+    ProductName VARCHAR(100) NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+);
