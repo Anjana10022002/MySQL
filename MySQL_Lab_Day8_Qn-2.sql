@@ -15,4 +15,6 @@ ALTER TABLE books
 ADD PublishedYear INT NOT NULL;
 
 TRUNCATE TABLE books;
+
+DROP DATABASE IF EXISTS BookStoreDB;
  
