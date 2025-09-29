@@ -9,4 +9,5 @@ CREATE TABLE products(
 ALTER TABLE products
 ADD Category VARCHAR(100) NOT NULL;
 TRUNCATE TABLE products;
+DROP DATABASE IF EXISTS GroceryShop;
 
