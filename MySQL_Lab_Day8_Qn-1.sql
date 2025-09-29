@@ -6,3 +6,7 @@ CREATE TABLE products(
     ProductName VARCHAR(100) NOT NULL,
     Price DECIMAL(10, 2) NOT NULL,
 );
+ALTER TABLE products
+ADD Category VARCHAR(100) NOT NULL;
+
+
