@@ -1,3 +1,9 @@
 CREATE DATABASE IF NOT EXISTS BookStoreDB;
 USE BookStoreDB;
+CREATE TABLE authors(
+    AuthorID INT AUTO_INCREMENT PRIMARY KEY,
+    AuthorName VARCHAR(100) NOT NULL,   
+    Country VARCHAR(100) NOT NULL,
+);
+
  
