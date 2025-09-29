@@ -11,5 +11,6 @@ CREATE TABLE books(
     Price DECIMAL(10, 2) NOT NULL,
     AuthorID INT NOT NULL
 ); 
-
+ALTER TABLE books
+ADD PublishedYear INT NOT NULL;
  
