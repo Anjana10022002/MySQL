@@ -26,3 +26,6 @@ SELECT employees.ID, employees.employeeName, departments.departmentName
 FROM employees
 LEFT JOIN departments
 ON employees.id = departments.empID;
+
+SELECT employees.ID, employees.employeeName, departments.departmentName
+FROM departments
