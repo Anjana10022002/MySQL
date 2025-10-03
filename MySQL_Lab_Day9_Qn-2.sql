@@ -15,9 +15,14 @@ INSERT INTO departments(empID, departmentName)
 VALUES
 (1, "HR"),
 (2, "IT"),
-(3, "Finance")
+(4, "Finance")
 
 SELECT employees.ID, employees.employeeName, departments.departmentName
 FROM employees
 LEFT JOIN departments
 ON departments.ID = employees.empID;
+
+SELECT employees.ID, employees.employeeName, departments.departmentName
+FROM employees
+LEFT JOIN departments
+ON employees.id = departments.empID;
