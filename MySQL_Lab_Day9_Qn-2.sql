@@ -1,0 +1,9 @@
+CREATE TABLE employees(
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    employeeName VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE departments(
+    empID INT AUTO_INCREMENT PRIMARY KEY,
+    departmentName VARCHAR(50) NOT NULL
+);
