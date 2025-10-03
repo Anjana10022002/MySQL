@@ -16,3 +16,8 @@ VALUES
 (1, "HR"),
 (2, "IT"),
 (3, "Finance")
+
+SELECT employees.ID, employees.employeeName, departments.departmentName
+FROM employees
+LEFT JOIN departments
+ON departments.ID = employees.empID;
