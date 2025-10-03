@@ -20,7 +20,7 @@ VALUES
 SELECT employees.ID, employees.employeeName, departments.departmentName
 FROM employees
 LEFT JOIN departments
-ON employees.ID = department.empID;
+ON employees.ID = departments.empID;
 
 SELECT employees.ID, employees.employeeName, departments.departmentName
 FROM employees
