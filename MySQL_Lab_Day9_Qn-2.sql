@@ -24,10 +24,10 @@ ON employees.ID = departments.empID;
 
 SELECT employees.ID, employees.employeeName, departments.departmentName
 FROM employees
-LEFT JOIN departments
+INNER JOIN departments
 ON employees.id = departments.empID;
 
 SELECT employees.ID, employees.employeeName, departments.departmentName
 FROM departments
 LEFT JOIN employees
-ON employees.ID = department.empID;
+ON employees.ID = departments.empID;
