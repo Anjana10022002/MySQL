@@ -11,3 +11,8 @@ CREATE TABLE departments(
     empID INT PRIMARY KEY,
     departmentName VARCHAR(50) NOT NULL
 );
+INSERT INTO departments(empID, departmentName)
+VALUES
+(1, "HR"),
+(2, "IT"),
+(3, "Finance")
