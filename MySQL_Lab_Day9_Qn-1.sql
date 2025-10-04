@@ -13,4 +13,10 @@ CREATE TABLE borrowers(
     borrowerName VARCHAR(50) NOT NULL,
     bookID INT
 );
+INSERT INTO borrowers
+VALUES
+(101, "ALice", 1),
+(102, "Bob", 2),
+(103, "Charlie", NULL);
+
 
