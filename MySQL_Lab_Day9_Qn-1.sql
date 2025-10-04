@@ -1,6 +1,6 @@
 CREATE  TABLE books(
     bookID INT PRIMARY KEY,
-    Title VARCH(100) NOT NULL
+    title VARCH(100) NOT NULL
 );
 INSERT INTO books
 VALUES
@@ -18,5 +18,9 @@ VALUES
 (101, "ALice", 1),
 (102, "Bob", 2),
 (103, "Charlie", NULL);
+
+SELECT title FROM books
+LEFT JOIN borrowers
+ON books.title = borrowers.borrowerName
 
 
