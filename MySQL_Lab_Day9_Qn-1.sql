@@ -1,8 +1,8 @@
-CREATE  TABLE books(
+CREATE  TABLE books1(
     bookID INT PRIMARY KEY,
-    title VARCH(100) NOT NULL
+    title VARCHAR(100) NOT NULL
 );
-INSERT INTO books
+INSERT INTO books1
 VALUES
 (1, "The Alchemist"),
 (2, "The Power of Now"),
@@ -19,8 +19,10 @@ VALUES
 (102, "Bob", 2),
 (103, "Charlie", NULL);
 
-SELECT book.bookID, book.title, borrowers.borrowerName AS borrowedBy FROM books
+SELECT books1.bookID, books1.title, borrowers.borrowerName AS borrowedBy FROM books1
 LEFT JOIN borrowers
-ON books.bookID = borrowers.bookID
+ON books1.bookID = borrowers.bookID;
 
-
+SELECT borrowers.borrowerID, borrowers.borrowerName, books1.title FROM borrowers
+LEFT JOIN books1
+ON borrowers.bookID = books1.bookID;
