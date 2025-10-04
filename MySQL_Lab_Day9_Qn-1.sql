@@ -19,8 +19,8 @@ VALUES
 (102, "Bob", 2),
 (103, "Charlie", NULL);
 
-SELECT title FROM books
+SELECT book.bookID, book.title, borrowers.borrowerName AS borrowedBy FROM books
 LEFT JOIN borrowers
-ON books.title = borrowers.borrowerName
+ON books.bookID = borrowers.bookID
 
 
