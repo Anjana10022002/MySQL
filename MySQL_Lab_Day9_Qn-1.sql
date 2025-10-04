@@ -34,4 +34,4 @@ WHERE  borrowers.bookID IS NULL;
 
 SELECT  borrowers.borrowerID, borrowers.borrowerName, books1.title FROM borrowers
 LEFT JOIN books1
-ON borrowers.bookID = books1.bookID
+ON borrowers.bookID = books1.bookID;
