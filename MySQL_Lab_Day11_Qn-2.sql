@@ -8,5 +8,5 @@ CREATE TABLE books2 (
     categoryID INT,
     FOREIGN KEY (categoryID) REFERENCES categories(categoryID)
 );
-CREATE INDEX idx_book_name ON books(book_name);
-SHOW INDEXES FROM books;
+CREATE INDEX idx_book_name ON books2(bookName);
+SHOW INDEXES FROM books2;
