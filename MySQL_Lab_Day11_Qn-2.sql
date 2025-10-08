@@ -18,7 +18,8 @@ INSERT INTO books2 (bookName, categoryID)
 VALUES 
 ('The Alchemist', 1),
 ('A Brief History of Time', 2),
-
+('The Art of War', 3),
+('To Kill a Mockingbird', 1);
 
 CREATE INDEX idx_book_name ON books2(bookName);
 
