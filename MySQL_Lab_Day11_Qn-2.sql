@@ -14,6 +14,12 @@ CREATE TABLE books2 (
     categoryID INT,
     FOREIGN KEY (categoryID) REFERENCES categories(categoryID)
 );
+INSERT INTO books2 (bookName, categoryID)
+VALUES 
+('The Alchemist', 1),
+('A Brief History of Time', 2),
+
+
 CREATE INDEX idx_book_name ON books2(bookName);
 
 SHOW INDEXES FROM books2;
