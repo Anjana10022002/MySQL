@@ -9,6 +9,9 @@ VALUES
 ("Raju", "Sales", 1),
 ("Sangeetha", "Sales", 3), 
 ("Vinoy", "Operations", 8), 
+("Abey", "Packing", 2),
+("Thomas", "Packing", 1); 
+
 CREATE TABLE exam(
     ID INT AUTO_INCREMENT,
     employeeID INT NOT NULL,
