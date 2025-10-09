@@ -4,6 +4,9 @@ CREATE TABLE employee(
     department VARCHAR(100) NOT NULL,
     leave INT NOT NULL 
 );
+INSERT INTO employee(employeeName, department, leave)
+VALUES
+()
 CREATE TABLE exam(
     ID INT AUTO_INCREMENT,
     employeeID INT NOT NULL,
