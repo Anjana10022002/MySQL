@@ -13,7 +13,9 @@ VALUES
 ("Thomas", "Packing", 1),
 ("Muneer", "Operations", 7),
 ("Aparna", "Sales", 3),
-("Abid", "Operations", 9,
+("Abid", "Operations", 9),
+("Fathima", "Sales", 11),
+("Varghese", "Operations", 14);
 
 CREATE TABLE exam(
     ID INT AUTO_INCREMENT,
