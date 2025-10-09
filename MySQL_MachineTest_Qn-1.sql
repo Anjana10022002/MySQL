@@ -26,3 +26,8 @@ INSERT INTO exam(employeeID, examStatus)
 VALUES
 (2,"Pass"),
 (5, "Fail"),
+(1, "Fail"),
+(8,"Pass"),
+(3,"Pass"),
+(1,"Pass"),
+(6, "Fail"),
