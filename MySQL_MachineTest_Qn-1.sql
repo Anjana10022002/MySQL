@@ -31,3 +31,5 @@ VALUES
 (3,"Pass"),
 (1,"Pass"),
 (6, "Fail"),
+(9,"Pass"),
+(10,"Pass");
