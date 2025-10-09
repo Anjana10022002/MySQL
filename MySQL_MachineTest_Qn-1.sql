@@ -22,3 +22,7 @@ CREATE TABLE exam(
     employeeID INT NOT NULL,
     examStatus VARCHAR(20)
 );
+INSERT INTO exam(employeeID, examStatus)
+VALUES
+(2,"Pass"),
+(5, "Fail"),
