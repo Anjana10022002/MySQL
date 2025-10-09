@@ -6,7 +6,9 @@ CREATE TABLE employee(
 );
 INSERT INTO employee(employeeName, department, leave)
 VALUES
-()
+("Raju", "Sales", 1),
+("Sangeetha", "Sales", 3), 
+("Vinoy", "Operations", 8), 
 CREATE TABLE exam(
     ID INT AUTO_INCREMENT,
     employeeID INT NOT NULL,
