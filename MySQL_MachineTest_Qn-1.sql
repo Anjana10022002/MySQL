@@ -10,7 +10,10 @@ VALUES
 ("Sangeetha", "Sales", 3), 
 ("Vinoy", "Operations", 8), 
 ("Abey", "Packing", 2),
-("Thomas", "Packing", 1); 
+("Thomas", "Packing", 1),
+("Muneer", "Operations", 7),
+("Aparna", "Sales", 3),
+("Abid", "Operations", 9,
 
 CREATE TABLE exam(
     ID INT AUTO_INCREMENT,
