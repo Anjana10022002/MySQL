@@ -39,4 +39,4 @@ VALUES
 
 
 SELECT * FROM employee
-WHERE leaves > 5 and department = sales;
+WHERE leaves > 5 AND department = "Sales";
