@@ -1,10 +1,11 @@
+DROP TABLE IF EXISTS employee;
 CREATE TABLE employee(
     ID INT AUTO_INCREMENT PRIMARY KEY,
     employeeName VARCHAR(100) NOT NULL,
     department VARCHAR(100) NOT NULL,
-    leave INT NOT NULL 
+    leaves INT NOT NULL 
 );
-INSERT INTO employee(employeeName, department, leave)
+INSERT INTO employee(employeeName, department, leaves)
 VALUES
 ("Raju", "Sales", 1),
 ("Sangeetha", "Sales", 3), 
@@ -18,9 +19,10 @@ VALUES
 ("Varghese", "Operations", 14);
 
 CREATE TABLE exam(
-    ID INT AUTO_INCREMENT,
+    ID INT AUTO_INCREMENT PRIMARY Key,
     employeeID INT NOT NULL,
     examStatus VARCHAR(20)
+
 );
 INSERT INTO exam(employeeID, examStatus)
 VALUES
@@ -34,3 +36,7 @@ VALUES
 (9,"Pass"),
 (10,"Pass");
 
+
+
+SELECT * FROM employee
+WHERE leaves > 5 and department = sales;
