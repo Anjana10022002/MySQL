@@ -36,7 +36,6 @@ VALUES
 (9,"Pass"),
 (10,"Pass");
 
-
-
 SELECT * FROM employee
 WHERE leaves > 5 AND department = "Sales";
+
