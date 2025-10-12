@@ -42,3 +42,5 @@ WHERE leaves > 5 AND department = "Sales";
 SELECT COUNT(department) FROM employee
 WHERE department = "Operations";
 
+SELECT department, COUNT(*) AS totalEmployees FROM employee
+GROUP BY department;
