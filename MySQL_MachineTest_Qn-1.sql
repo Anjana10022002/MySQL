@@ -45,4 +45,4 @@ WHERE department = "Operations";
 SELECT department, COUNT(*) AS totalEmployees FROM employee
 GROUP BY department;
 
-SELECT department
+SELECT department, SUM()
