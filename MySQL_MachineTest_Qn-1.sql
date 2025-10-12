@@ -39,3 +39,5 @@ VALUES
 SELECT * FROM employee
 WHERE leaves > 5 AND department = "Sales";
 
+SELECT COUNT(department) FROM employee
+WHERE department = "Operations";
