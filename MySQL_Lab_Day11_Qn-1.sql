@@ -1,4 +1,4 @@
-CREATE TABLE authors(
+CREATE TABLE author(
     authorID INT PRIMARY KEY AUTO_INCREMENT,
     authorName VARCHAR(100) NOT NULL
 );
