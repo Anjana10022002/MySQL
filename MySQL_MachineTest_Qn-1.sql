@@ -22,7 +22,7 @@ CREATE TABLE exam(
     ID INT AUTO_INCREMENT PRIMARY Key,
     employeeID INT NOT NULL,
     examStatus VARCHAR(20)
-
+    FOREIGN KEY(employeeID) REFERENCES employee(ID)
 );
 INSERT INTO exam(employeeID, examStatus)
 VALUES
@@ -48,3 +48,9 @@ GROUP BY department;
 SELECT department, SUM(leaves) AS totalLeaves FROM employee
 GROUP BY department
 HAVING SUM(leaves) >10;
+
+SELECT employee.employeeName, exam.examStatus FROM employee
+JOIN exam
+ON employee.ID = exam.employeeID
+WHERE examStatus = "Pass";
+
