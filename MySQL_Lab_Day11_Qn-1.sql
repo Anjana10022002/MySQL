@@ -1,0 +1,3 @@
+CREATETABLE authors(
+    authorID INT PRIMARY KEY AUTO_INCREMENT,
+)
