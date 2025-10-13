@@ -1,3 +1,9 @@
 CREATETABLE authors(
     authorID INT PRIMARY KEY AUTO_INCREMENT,
-)
+    authorName VARCHAR(100) NOT NULL
+);
+CREATE TABLE book(
+    bookID INT AUTO_INCREMENT PRIMARY KEY,
+    bookTitle VARCHAR(100) NOT NULL,
+    FOREIGN KEY(bookID) REFERENCES authors(authorID)
+);
