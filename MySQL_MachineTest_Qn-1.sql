@@ -45,4 +45,6 @@ WHERE department = "Operations";
 SELECT department, COUNT(*) AS totalEmployees FROM employee
 GROUP BY department;
 
-SELECT department, SUM() AS total 
+SELECT department, SUM(leaves) AS totalLeaves FROM employee
+GROUP BY department
+HAVING SUM(leaves) >10;
