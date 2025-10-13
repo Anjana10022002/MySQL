@@ -21,7 +21,7 @@ VALUES
 CREATE TABLE exam(
     ID INT AUTO_INCREMENT PRIMARY Key,
     employeeID INT NOT NULL,
-    examStatus VARCHAR(20)
+    examStatus VARCHAR(20),
     FOREIGN KEY(employeeID) REFERENCES employee(ID)
 );
 INSERT INTO exam(employeeID, examStatus)
