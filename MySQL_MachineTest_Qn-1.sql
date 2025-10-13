@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS employee;
+DROP TABLE IF EXISTS exam;
 CREATE TABLE employee(
     ID INT AUTO_INCREMENT PRIMARY KEY,
     employeeName VARCHAR(100) NOT NULL,
@@ -50,7 +51,7 @@ GROUP BY department
 HAVING SUM(leaves) >10;
 
 SELECT employee.employeeName, exam.examStatus FROM employee
-JOIN exam
+INNER JOIN exam
 ON employee.ID = exam.employeeID
 WHERE examStatus = "Pass";
 
