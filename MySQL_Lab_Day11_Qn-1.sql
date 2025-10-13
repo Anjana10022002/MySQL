@@ -2,6 +2,9 @@ CREATE TABLE authors(
     authorID INT PRIMARY KEY AUTO_INCREMENT,
     authorName VARCHAR(100) NOT NULL
 );
+INSERT INTO authors(authorName) 
+VALUES 
+('Author 1'), ('Author 2'), ('Author 3');
 CREATE TABLE book(
     bookID INT AUTO_INCREMENT PRIMARY KEY,
     bookTitle VARCHAR(100) NOT NULL,
