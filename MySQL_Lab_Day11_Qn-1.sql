@@ -8,3 +8,4 @@ CREATE TABLE book(
     authorID INT,
     FOREIGN KEY(authorID) REFERENCES authors(authorID)
 );
+CREATE INDEX idx_author_id ON book(authorID);
