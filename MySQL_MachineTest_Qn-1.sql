@@ -54,3 +54,7 @@ JOIN exam
 ON employee.ID = exam.employeeID
 WHERE examStatus = "Pass";
 
+SELECT employee.employeeName FROM employee
+LEFT JOIN exam
+ON employee.ID = exam.employeeID
+WHERE exam.employeeID IS NULL;
