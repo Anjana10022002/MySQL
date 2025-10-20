@@ -7,3 +7,7 @@ CREATE TABLE courses(
     courseID INT PRIMARY KEY AUTO_INCREMENT,
     courseName VARCHAR(100) NOT NULL
 );
+CREATE TABLE enrollments(
+    studentID INT,
+    courseID INT,
+)
