@@ -17,5 +17,6 @@ VALUES
 
 SELECT * FROM LibraryManagement
 WHERE Price > 400;
+
 SELECT * FROM LibraryManagement
 WHERE Genre = 'History' OR Genre = 'Science' OR Genre = 'Fiction';
