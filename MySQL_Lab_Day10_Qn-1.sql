@@ -10,4 +10,5 @@ CREATE TABLE courses(
 CREATE TABLE enrollments(
     studentID INT,
     courseID INT,
+    PRIMARY KEY (studentID, courseID), 
 )
