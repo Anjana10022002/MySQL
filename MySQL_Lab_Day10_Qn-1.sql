@@ -13,4 +13,4 @@ CREATE TABLE enrollments(
     PRIMARY KEY (studentID, courseID), 
     FOREIGN KEY (studentID) REFERENCES students(studentID),
     FOREIGN KEY (courseID) REFERENCES courses(courseID)
-)
+);
