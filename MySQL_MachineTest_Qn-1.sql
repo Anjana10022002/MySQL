@@ -25,6 +25,7 @@ CREATE TABLE exam(
     examStatus VARCHAR(20),
     FOREIGN KEY(employeeID) REFERENCES employee(ID)
 );
+
 INSERT INTO exam(employeeID, examStatus)
 VALUES
 (2,"Pass"),
